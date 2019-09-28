@@ -1,0 +1,13 @@
+***************************** socket.IO *****************************
+ 
+- establishing communication channel in both ends : server and client (node and react) 
+- npm install --save socket.io 
+npm install --save socket.io-client
+
+
+1. connect via server, set event handler connection for waiting to the client
+2. connect with the client
+3. inform all connected clients about the new change 
+
+
+***************************** socket.IO *****************************

@@ -1,0 +1,20 @@
+/**************************** Methods ****************************/
+
+- res.json() - sending back a json response / 
+               sending more data if necessary
+
+*** example *** :
+ exports.getPosts = (req,res,next) => {
+    const dummyResponse = {
+        posts:[{title:'First Post',content:'This is the first Post'}]
+    };
+    res.status(200).json(dummyResponse);
+};
+
+- bodyParser.json(); - parse inconming json data 
+  app.use(bodyParser.json()); //  application/json
+- bodyParser.urlencoded() - parse form data 
+  app.use(bodyParser.urlencoded()); //x-www-form-urlencoded <form>
+
+
+/**************************** Methods ****************************/

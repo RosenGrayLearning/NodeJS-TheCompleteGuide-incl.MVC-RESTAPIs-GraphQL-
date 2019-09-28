@@ -1,0 +1,17 @@
+***************************** Rest Api Limitations *****************************
+
+RestApi - Stateless,client-independent API for exchanging data
+GraphQL Api - Stateless,client-independent API for exchanging data
+              with higher query flexibility 
+
+- RestApi Limitations
+1. GET/post -> get the post object (id,title,content...) - but we need only title
+2. solution might be - creating another end point : GET/post-title
+3. solution might be - taking the entire post and filter it on the front side of our app
+4. solution might be - adding query params GET /post?data=title
+5. the problem : we will have a lot of end points, which we will have update 
+   them all the time, and this solution is not flexible
+
+solution : GraphQL
+***************************** Rest Api Limitations *****************************
+

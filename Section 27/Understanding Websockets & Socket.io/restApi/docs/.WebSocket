@@ -1,0 +1,16 @@
+***************************** WebSockets *****************************
+
+- a protocol - instead of http
+- alow us to build real time web services - real time communication 
+- what if something changes on the server, and we want to inform the client 
+  for example : email being sent or incoming chat message.
+- we wont have to send a response to get it back, the server will let us 
+  know as soon as it has some update for us
+
+Http - client request --> server response client
+WebSockets - server pushes data to client 
+
+
+
+
+***************************** WebSockets *****************************

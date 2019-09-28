@@ -1,0 +1,25 @@
+/**************************** Response Headers ****************************/
+
+- general response headers that we must register
+  (on our server, when building an api)
+  before sending the response to the client
+
+
+app.use((req,res,next)=>{
+    res.setHeader('Access-Control-Allow-Origin','*');res.setHeader('Access-Control-Allow-Origin','*'); // * stands for wild card / or we can be more specific about our domains
+    res.setHeader('Access-Control-Allow-Methods','GET, POST, PUT, PATCH, DELETE'); //allowing to use the client(the origin) which methods are allowed
+    res.setHeader('Access-Control-Allow-Headers','Content-Type, Authorization');
+    next();
+});
+
+/**************************** Response Headers ****************************/
+
+
+
+/**************************** Request Headers ****************************/
+
+'Content-Type':'application/json'
+
+
+
+/**************************** Request Headers ****************************/

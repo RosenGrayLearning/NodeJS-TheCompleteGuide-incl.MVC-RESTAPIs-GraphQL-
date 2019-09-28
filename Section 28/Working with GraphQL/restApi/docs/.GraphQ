@@ -1,0 +1,32 @@
+***************************** GraphQL *****************************
+
+Reach query language that we use in our front end, 
+to send it to the back end which is then parsed on the back end
+and dynamically retrieve just the data we need
+
+- almost like db query (like sql or mongoDb), but on our front end
+- One single endpoint for posting/getting data : POST/graphql
+- define is own query language which we put on our request body
+- we only use Post request because we put our query on our request body
+- we have operation types which are like our routes on which we set our route types
+- we have resolvers which are kind of like our controllers, that holds our server side logic
+  fetches , prepares and returns data
+
+- Operation Types (Like Routes)
+1. Query -> retrive data("GET")
+2. Mutation -> manipulate data (POST,PUT,PATCH,DELETE)
+3. Subscription -> set up realtime connection via websockets
+
+
+- Resolvers (contains the server side logic) - (Like Controllers)
+  Query -> retrive data("GET")
+
+
+
+
+
+1. graphql - defining the schema of our graphQL service ( the defenition of our queries,mutations and so on)
+2. express-graphql - simple server that will do the parsing of incoming reuqests
+3. npm install --save graphql express-graphql
+
+***************************** GraphQL *****************************

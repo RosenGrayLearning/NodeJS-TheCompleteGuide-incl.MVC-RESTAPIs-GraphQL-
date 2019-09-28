@@ -1,0 +1,15 @@
+{
+  "name": "working_with_express.js",
+  "version": "1.0.0",
+  "description": "section 5 ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Vladi Iokhim",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

@@ -1,0 +1,43 @@
+/******************* Differing Stripe Integration *******************\
+
+- sudo npm install --save stripe
+
+In the next lecture, we'll use Stripe to handle payments. The way you accept payments has changed since the recording of the course (and the lectures will be updated in the future - the approach shown in the next lecture still works though).
+
+After the next lecture, you find another lecture where we update to an improved payment flow (building up on the code shown in the next lecture)!
+
+Unfortunately, the docs shown in the next lecture are not online anymore, so to follow along smoothly, below you find the code you need to follow the steps in the next lecture (the approach shown there still works):
+
+The snippet we'll add to the checkout.ejs file (in the next lecture, shown in the video):
+
+<form action="/create-order" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<YOUR API KEY>"
+        data-amount="<%= totalSum * 100 %>"
+        data-name="Your Order"
+        data-description="All the items you ordered"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-currency="usd">
+    </script>
+</form>
+You find the Stripe API key in the "Developers" => "API Keys" part of the Strip web console (just as shown in the next lecture - that has not changed).
+
+The server-side code will work just as shown in the next lecture, no adjustments are required there.
+
+
+
+
+
+/******************* Differing Stripe Integration *******************\
+
+
+Publishable key
+pk_test_AedDhHTa2YuTv6s3EM5BlSzP00zNuAzgS3
+—
+Sep 20
+
+More options
+Secret key
+sk_test_4XZbPS7JkyR0EQIKF18lVxEm00dvvOTonR
